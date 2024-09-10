@@ -33,7 +33,9 @@ module CodeAction =
         let assemblies =
             [ "Microsoft.CodeAnalysis.Features"
               "Microsoft.CodeAnalysis.CSharp.Features"
-              "Microsoft.CodeAnalysis.Workspaces"
+              "Microsoft.CodeAnalysis.Workspaces",
+              "Microsoft.CodeAnalysis.ExternalAccess.OmniSharp",
+              "Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.CSharp"
             ]
             |> Seq.map Assembly.Load
             |> Array.ofSeq
